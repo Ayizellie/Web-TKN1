@@ -5,6 +5,7 @@ import DetailBerita from './pages/DetailBerita'; // opsional
 import ProfilSekolah from './pages/ProfilSekolah';
 import Kepengurusan from './pages/Kepengurusan';
 import Kontak from './pages/Kontak';
+import GaleriKegiatan from './pages/GaleriKegiatan';
 import FasilitasKegiatan from './pages/FasilitasKegiatan';
 import KurikulumPembelajaran from './pages/KurikulumPembelajaran';
 
@@ -25,6 +26,8 @@ function App() {
     PageComponent = <Kepengurusan />;
   } else if (path === '/kontak') {
     PageComponent = <Kontak />;
+  } else if (path === '/galeri-kegiatan') {
+    PageComponent = <GaleriKegiatan />;
   } else if (path === '/fasilitas-kegiatan') {
     PageComponent = <FasilitasKegiatan />;
   } else if (path === '/kurikulum-pembelajaran') {
