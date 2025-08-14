@@ -33,8 +33,8 @@ export default function Navbar() {
               <a href="/galeri-kegiatan" className="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-100 rounded-t-xl">
                 Galeri Kegiatan
               </a>
-              <a href="/fasilitas-sekolah" className="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-100 rounded-b-xl">
-                Fasilitas Sekolah
+              <a href="/fasilitas-kegiatan" className="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-100 rounded-b-xl">
+                Fasilitas Kegiatan
               </a>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Navbar() {
                   <a href="/galeri-kegiatan" onClick={toggleMenu} className="block text-sm text-blue-800 hover:underline">
                     Galeri Kegiatan
                   </a>
-                  <a href="/fasilitas-sekolah" onClick={toggleMenu} className="block text-sm text-blue-800 hover:underline">
+                  <a href="/fasilitas-kegiatan" onClick={toggleMenu} className="block text-sm text-blue-800 hover:underline">
                     Fasilitas Sekolah
                   </a>
                 </div>
