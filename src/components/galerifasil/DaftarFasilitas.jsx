@@ -37,9 +37,9 @@ const DaftarFasilitas = () => {
     <div className="w-full bg-white pb-16">
       <div className="px-4 sm:px-6 lg:px-20 space-y-10 mx-auto max-w-screen-xl">
         <a 
-            href="/"
-            className="flex items-center text-blue-800 font-semibold mt-24">
-            <HiArrowLeft className="mr-2 text-3xl" />
+          href="/"
+          className="flex items-center text-blue-800 font-semibold mt-24">
+          <HiArrowLeft className="mr-2 text-3xl" />
         </a>
       </div>
 

@@ -6,6 +6,7 @@ import ProfilSekolah from './pages/ProfilSekolah';
 import Kepengurusan from './pages/Kepengurusan';
 import Kontak from './pages/Kontak';
 import FasilitasKegiatan from './pages/FasilitasKegiatan';
+import KurikulumPembelajaran from './pages/KurikulumPembelajaran';
 
 import './App.css';
 
@@ -26,6 +27,8 @@ function App() {
     PageComponent = <Kontak />;
   } else if (path === '/fasilitas-kegiatan') {
     PageComponent = <FasilitasKegiatan />;
+  } else if (path === '/kurikulum-pembelajaran') {
+    PageComponent = <KurikulumPembelajaran />;
   } else {
     PageComponent = <LandingPage />;
   }

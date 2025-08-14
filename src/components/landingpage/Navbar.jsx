@@ -58,7 +58,16 @@ export default function Navbar() {
           >
             Kontak
           </a>
-          <a href="#pembelajaran" className="hover:text-blue-600">Pembelajaran</a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "/kurikulum-pembelajaran";
+            }}
+            className="hover:text-blue-600"
+          >
+            Pembelajaran
+          </a>
           <a href="#ppdb" className="hover:text-blue-600">PPDB</a>
         </div>
 
