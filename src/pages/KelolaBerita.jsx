@@ -1,6 +1,10 @@
 import React from "react";
+import DaftarBerita from "../components/admin/Berita/DaftarBerita";
 
-const KelolaBerita = () => {
-
-};
-export default KelolaBerita;
+export default function LandingPage() {
+    return (
+        <main className="w-full overflow-x-hidden">
+            <DaftarBerita />
+        </main>
+    );
+}

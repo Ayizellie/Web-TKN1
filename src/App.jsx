@@ -39,21 +39,21 @@ function App() {
     PageComponent = <FasilitasKegiatan />;
   } else if (path === '/kurikulum-pembelajaran') {
     PageComponent = <KurikulumPembelajaran />;
-  } else if (path === '/admin-dashboard') {
+  } else if (path === '/admin/dashboard') {
     PageComponent = <DashboardAdmin />;
-  } else if (path === '/admin-datamurid') {
+  } else if (path === '/admin/datamurid') {
     PageComponent = <KelolaDataMurid />;
-  } else if (path === '/admin-datapegawai') {
+  } else if (path === '/admin/datapegawai') {
     PageComponent = <KelolaDataPegawai />;
-  } else if (path === '/admin-kelola-galeri') {
+  } else if (path === '/admin/kelolagaleri') {
     PageComponent = <KelolaGaleri />;
-  } else if (path === '/admin-kelola-fasilitas') {
+  } else if (path === '/admin/kelolafasilitas') {
     PageComponent = <KelolaFasilitas />;
-  } else if (path === '/admin-kelola-berita') {
+  } else if (path === '/admin/kelolaberita') {
     PageComponent = <KelolaBerita />;
-  } else if (path === '/admin-kelola-verifikasi-pendaftaran') {
+  } else if (path === '/admin/kelolaverifikasipendaftaran') {
     PageComponent = <KelolaVerifikasiPendaftaran />;
-  } else if (path === '/admin-kelola-akun-admin') {
+  } else if (path === '/admin/akunadmin') {
     PageComponent = <KelolaAkunAdmin />;
   } else {
     PageComponent = <LandingPage />;

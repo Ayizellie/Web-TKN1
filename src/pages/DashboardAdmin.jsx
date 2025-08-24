@@ -1,6 +1,10 @@
 import React from "react";
+import AdminDashboard from "../components/admin/Dashboard/AdminDashboard";
 
-const DashboardAdmin = () => {
-
-};
-export default DashboardAdmin;
+export default function LandingPage() {
+    return (
+        <main className="w-full overflow-x-hidden">
+            <AdminDashboard />
+        </main>
+    );
+}
