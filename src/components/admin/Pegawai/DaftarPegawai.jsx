@@ -1,39 +1,172 @@
 import React from "react";
-import { FaUserGraduate, FaChild, FaMedal } from "react-icons/fa";
-import Sidebar from "../sidebaradmin/Sidebar";
-
+import NavbarSidebar from "../NavbarSidebar/NavbarSidebar";
 const DaftarPegawai = () => {
 
-const cards = [
-    {title:"Murid", count: "110", label:"Murid Terdaftar", bgColor:"bg-[#F58CA2]", bgOpacity:"bg-opacity-50", icon: <FaChild className="text-2xl text-[#AC383D]" /> },
-  ];
-
   return (
-    <div className="flex">
-      <Sidebar />
-      <div className="w-full bg-[#f8f8f8] min-h-screen">
-        <div className="bg-white p-4 flex justify-between items-center mb-4 shadow-sm">
-          <div className="flex items-center gap-2">
-            <h1 className="text-md font-semibold text-gray-700">Admin1</h1>
-          </div>
-        </div>
+    <NavbarSidebar >
+        <div className="flex">
+            <div className="w-full min-h-screen">
+                <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <div className="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-8">
+                    <label htmlFor="table-search" className="sr-only">Search</label>
+                        <div className="relative">
+                            <div className="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
+                                <svg className="w-5 h-5 text-gray-50 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"></path></svg>
+                            </div>
+                            <input type="text" id="table-search" className="block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search for items"></input>
+                        </div>
+                    </div>
 
-        <div className="px-10 pb-2">
-        <h1 className="text-xl font-medium text-[#064a8c]mb-2">Selamat Datang</h1>
-        <p className="text-sm font-light text-[#047DD2]">Management Dashboard TK Negeri 1 Sangatta Utara</p>
-      </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
-            {cards.map((card, idx) => (
-              <div key={idx} className={`rounded-2xl shadow-md p-5 ${card.bgColor}  ${card.bgOpacity} flex flex-col gap-2`}>
-                <div className="font-bold text-black text-sm">{card.title}</div>
-                <div className="font-normal text-black text-2xl flex items-center gap-13">{card.count} <span>{card.icon}</span></div>
-                <div className="text-sm text-black">{card.label}</div>
-              </div>
-            ))}
-          </div>
-      </div>
+                    <table className="w-full text-sm text-center rtl:text-right text-black ">
+                        <thead className="text-xs text-black uppercase bg-[#6FBFF2] bg-opacity-50 ">
+                            <tr>
+                                <th scope="col" className="px-6 py-3">
+                                    Nama Lengkap
+                                </th>
+                                <th scope="col" className="px-6 py-3">
+                                    Nama Ayah
+                                </th>
+                                <th scope="col" className="px-6 py-3">
+                                    Nama Ibu
+                                </th>
+                                <th scope="col" className="px-6 py-3">
+                                    Tanggal Lahir
+                                </th>
+                                <th scope="col" className="px-6 py-3">
+                                    Nomor HP
+                                </th>
+                                <th scope="col" className="px-6 py-3">
+                                    Detail
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className="bg-white border-b border-gray-200 hover:bg-gray-50 ">
+                                <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
+                                    Zellie Lie
+                                </th>
+                                <td className="px-6 py-4">
+                                    Erthana
+                                </td>
+                                <td className="px-6 py-4">
+                                    Aezelli
+                                </td>
+                                <td className="px-6 py-4">
+                                    13-10-2022
+                                </td>
+                                <td className="px-6 py-4">
+                                    081234568791
+                                </td>
+                                <td className="px-6 py-4">
+                                    <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Lihat</a>
+                                </td>
+                            </tr>
+                            <tr className="bg-white border-b border-gray-200 hover:bg-gray-50 ">
+                                <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
+                                    Zellie Lie
+                                </th>
+                                <td className="px-6 py-4">
+                                    Erthana
+                                </td>
+                                <td className="px-6 py-4">
+                                    Aezelli
+                                </td>
+                                <td className="px-6 py-4">
+                                    13-10-2022
+                                </td>
+                                <td className="px-6 py-4">
+                                    081234568791
+                                </td>
+                                <td className="px-6 py-4">
+                                    <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Lihat</a>
+                                </td>
+                            </tr>
+                            <tr className="bg-white border-b border-gray-200 hover:bg-gray-50 ">
+                                <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
+                                    Zellie Lie
+                                </th>
+                                <td className="px-6 py-4">
+                                    Erthana
+                                </td>
+                                <td className="px-6 py-4">
+                                    Aezelli
+                                </td>
+                                <td className="px-6 py-4">
+                                    13-10-2022
+                                </td>
+                                <td className="px-6 py-4">
+                                    081234568791
+                                </td>
+                                <td className="px-6 py-4">
+                                    <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Lihat</a>
+                                </td>
+                            </tr>
+                            <tr className="bg-white border-b border-gray-200 hover:bg-gray-50 ">
+                                <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
+                                    Zellie Lie
+                                </th>
+                                <td className="px-6 py-4">
+                                    Erthana
+                                </td>
+                                <td className="px-6 py-4">
+                                    Aezelli
+                                </td>
+                                <td className="px-6 py-4">
+                                    13-10-2022
+                                </td>
+                                <td className="px-6 py-4">
+                                    081234568791
+                                </td>
+                                <td className="px-6 py-4">
+                                    <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Lihat</a>
+                                </td>
+                            </tr>
+                            <tr className="bg-white border-b border-gray-200 hover:bg-gray-50 ">
+                                <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
+                                    Zellie Lie
+                                </th>
+                                <td className="px-6 py-4">
+                                    Erthana
+                                </td>
+                                <td className="px-6 py-4">
+                                    Aezelli
+                                </td>
+                                <td className="px-6 py-4">
+                                    13-10-2022
+                                </td>
+                                <td className="px-6 py-4">
+                                    081234568791
+                                </td>
+                                <td className="px-6 py-4">
+                                    <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Lihat</a>
+                                </td>
+                            </tr>
+                            <tr className="bg-white border-b border-gray-200 hover:bg-gray-50 ">
+                                <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap ">
+                                    Zellie Lie
+                                </th>
+                                <td className="px-6 py-4">
+                                    Erthana
+                                </td>
+                                <td className="px-6 py-4">
+                                    Aezelli
+                                </td>
+                                <td className="px-6 py-4">
+                                    13-10-2022
+                                </td>
+                                <td className="px-6 py-4">
+                                    081234568791
+                                </td>
+                                <td className="px-6 py-4">
+                                    <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Lihat</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
       </div>  
+    </ NavbarSidebar >
   );
 };
 export default DaftarPegawai;
