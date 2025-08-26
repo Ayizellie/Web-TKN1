@@ -11,6 +11,7 @@ import KurikulumPembelajaran from './pages/KurikulumPembelajaran';
 import DashboardAdmin from './pages/DashboardAdmin';
 import KelolaDataMurid from './pages/KelolaDataMurid';
 import KelolaDataPegawai from './pages/KelolaDataPegawai';
+import KelolaAkunAdmin from './pages/KelolaAkunAdmin';
 import './App.css';
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
     PageComponent = <KelolaDataMurid />;
   } else if (path === '/admin/datapegawai') {
     PageComponent = <KelolaDataPegawai />;
+  } else if (path === '/admin/akunadmin') {
+    PageComponent = <KelolaAkunAdmin />;
   } else {
     PageComponent = <LandingPage />;
   }
