@@ -1,13 +1,17 @@
 import React from "react";
 import NavbarSidebar from "../NavbarSidebar/NavbarSidebar";
 const DaftarMurid = () => {
-
-  return (
+    return (
     <NavbarSidebar >
         <div className="flex">
             <div className="w-full min-h-screen">
-                <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <div className="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-8">
+                <div className="relative overflow-x-auto sm:rounded-lg">
+                  <div>
+                    <h1 className="text-left text-black text-xl font-semibold mb-3">Data Murid TK Negeri 1 Sangatta Utara</h1>
+                    <h2 className="text-left text-black text-sm font-normal mb-8">Management Dashoard Admin TK Negeri 1 Sangatta Utara</h2>
+                  </div>
+
+                  <div className="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-8">
                     <label htmlFor="table-search" className="sr-only">Search</label>
                         <div className="relative">
                             <div className="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
