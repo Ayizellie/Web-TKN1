@@ -4,8 +4,7 @@ const AkunAdmin = () => {
   return (
 
     <NavbarSidebar >
-    <div className="flex">
-      <div className="w-full min-h-screen">
+      <div className=" flex w-full min-h-screen px-10">
         <div className="relative overflow-x-auto sm:rounded-lg">
           <div>
             <h1 className="text-left text-black text-xl font-semibold mb-3">Kelola Akun</h1>
@@ -14,7 +13,6 @@ const AkunAdmin = () => {
                   
         </div>
       </div> 
-    </div> 
     </ NavbarSidebar >
   );
 };
