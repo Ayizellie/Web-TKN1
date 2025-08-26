@@ -11,11 +11,6 @@ import KurikulumPembelajaran from './pages/KurikulumPembelajaran';
 import DashboardAdmin from './pages/DashboardAdmin';
 import KelolaDataMurid from './pages/KelolaDataMurid';
 import KelolaDataPegawai from './pages/KelolaDataPegawai';
-import KelolaGaleri from './pages/KelolaGaleri';
-import KelolaFasilitas from './pages/KelolaFasilitas';
-import KelolaBerita from './pages/KelolaBerita';
-import KelolaVerifikasiPendaftaran from './pages/KelolaVerifikasiPendaftaran';
-import KelolaAkunAdmin from './pages/KelolaAkunAdmin';
 import './App.css';
 
 function App() {
@@ -45,16 +40,6 @@ function App() {
     PageComponent = <KelolaDataMurid />;
   } else if (path === '/admin/datapegawai') {
     PageComponent = <KelolaDataPegawai />;
-  } else if (path === '/admin/kelolagaleri') {
-    PageComponent = <KelolaGaleri />;
-  } else if (path === '/admin/kelolafasilitas') {
-    PageComponent = <KelolaFasilitas />;
-  } else if (path === '/admin/kelolaberita') {
-    PageComponent = <KelolaBerita />;
-  } else if (path === '/admin/kelolaverifikasipendaftaran') {
-    PageComponent = <KelolaVerifikasiPendaftaran />;
-  } else if (path === '/admin/akunadmin') {
-    PageComponent = <KelolaAkunAdmin />;
   } else {
     PageComponent = <LandingPage />;
   }
