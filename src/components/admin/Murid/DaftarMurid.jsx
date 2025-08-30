@@ -6,13 +6,13 @@ const DaftarMurid = () => {
         <div className="flex">
             <div className="w-full min-h-screen px-10">
                 <div className="relative overflow-x-auto sm:rounded-lg">
-                  <div>
-                    <h1 className="text-left text-black text-xl font-semibold mb-3">Data Murid TK Negeri 1 Sangatta Utara</h1>
-                    <h2 className="text-left text-black text-sm font-normal mb-8">Management Dashoard Admin TK Negeri 1 Sangatta Utara</h2>
-                  </div>
+                    <div>
+                        <h1 className="text-left text-black text-xl font-semibold mb-3">Data Murid TK Negeri 1 Sangatta Utara</h1>
+                        <h2 className="text-left text-black text-sm font-normal mb-8">Management Dashoard Admin TK Negeri 1 Sangatta Utara</h2>
+                    </div>
 
-                  <div className="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-8">
-                    <label htmlFor="table-search" className="sr-only">Search</label>
+                    <div className="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-8">
+                        <label htmlFor="table-search" className="sr-only">Search</label>
                         <div className="relative">
                             <div className="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
                                 <svg className="w-5 h-5 text-gray-50 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"></path></svg>
@@ -22,7 +22,7 @@ const DaftarMurid = () => {
                     </div>
 
                     <table className="w-full text-sm text-center rtl:text-right text-black ">
-                        <thead className="text-xs text-black uppercase bg-[#6FBFF2] bg-opacity-50 ">
+                        <thead className="text-xs text-black bg-[#6FBFF2] bg-opacity-50 ">
                             <tr>
                                 <th scope="col" className="px-6 py-3">
                                     Nama Lengkap

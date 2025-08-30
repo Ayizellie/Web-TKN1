@@ -22,7 +22,7 @@ const DaftarPegawai = () => {
           </div>
 
           <table className="w-full text-sm text-center rtl:text-right text-black">
-            <thead className="text-xs text-black uppercase bg-[#6FBFF2] bg-opacity-50 ">
+            <thead className="text-xs text-black bg-[#6FBFF2] bg-opacity-50 ">
               <tr>
                 <th scope="col" className="px-6 py-3">
                   Nama Lengkap
